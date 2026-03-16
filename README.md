@@ -8,9 +8,7 @@ Due to hardware constraints and system resource limitations, the project underwe
 ## 💻 Phase 1: Simulation & Testing (Gazebo)
 To ensure code safety before hardware deployment, a "Digital Twin" simulation was configured.
 * **Outcome:** Successfully spawned the URDF model in Gazebo, visualized sensor data in RViz2, and validated basic teleoperation and mapping logic.
-* **Media:** Watch the simulation output below.
 
-<video src="media/simulation_gezzebo.webm" controls="controls" width="800" />
 
 ## 🚧 Phase 2: Real-World Hardware Limitations
 Deploying the custom autonomy stack to the physical hardware revealed key engineering constraints:
@@ -30,4 +28,7 @@ With a robust CycloneDDS foundation now established, future iterations will focu
 1. Safely subscribing to the L1 LiDAR's `PointCloud2` topics via the stable bridge.
 2. Utilizing lightweight point-cloud processing (e.g., 3D Voxel/Elevation grids) rather than full SLAM.
 3. Developing a custom, resource-efficient obstacle avoidance script.
+
+
+
 
