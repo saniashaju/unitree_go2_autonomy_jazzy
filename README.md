@@ -16,9 +16,6 @@ To ensure code safety before hardware deployment, a "Digital Twin" simulation wa
 Deploying the custom autonomy stack to the physical hardware revealed key engineering constraints:
 1. **SLAM Localization Drift:** The onboard Unitree L1 solid-state LiDAR has a narrower Field of View (FoV) and lower point density compared to the 360° spinning LiDARs the stack was originally designed for. This caused the SLAM algorithm to fail to localize, resulting in severe map drift.
 2. **Resource Saturation:** Attempting to fuse the heavy 3D point cloud with a live GStreamer camera feed inside the ROS 2 RViz environment maxed out host CPU and RAM, leading to system freezes.
-* **Media:** Live point cloud and TF tree streaming before the system pivot.
-
-<video src="media/LiDar_output.webm" controls="controls" width="800" />
 
 ## 🚀 Phase 3: Strategic Pivot to Official SDK (`unitree_ros2`)
 To establish a stable, crash-free "spinal cord" for the robot, development was pivoted to the official Unitree SDK utilizing **CycloneDDS** middleware. 
