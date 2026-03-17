@@ -1,5 +1,5 @@
 # unitree_go2_autonomy_jazzy
-Internship project documenting the migration of the Unitree Go2 Autonomy Stack to ROS 2 Jazzy on Ubuntu 24.04. Includes Gazebo simulation validation, real-world L1 LiDAR testing, and a strategic pivot to the official SDK for stable CycloneDDS communication
+Internship project Unitree Go2 Autonomy Stack to ROS 2 Jazzy on Ubuntu 24.04. Includes Gazebo simulation validation, real-world L1 LiDAR testing, and a strategic pivot to the official SDK for stable CycloneDDS communication
 ## 🛠️ Project Overview
 The initial objective was to deploy the CMU Autonomy Stack onto the physical Unitree Go2 EDU robot to enable autonomous mapping (SLAM) and navigation. Development was conducted on Ubuntu 24.04 using ROS 2 Jazzy. 
 
